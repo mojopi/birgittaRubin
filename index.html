@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Birgitta Rubin</title>
+
+	<style type="text/css">
+		
+		body{
+			font-family: helvetica;
+		}
+
+		#title{
+			font-size: 80px;
+			color: grey;
+		}
+
+		#art{
+			width: 500px;
+			height: 500px;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+/*			transition: 3s;
+*/			background-image: url(1.png);
+		}
+	</style>
+
+
+</head>
+<body>
+
+	<center>
+		<p id="title">Birgitta Rubin</p>
+
+		<div id="art"></div>
+	</center>
+
+	<script type="text/javascript">
+
+		let counter = 0;
+
+		function play(){
+
+		if(counter>14){
+		counter=0
+		}
+
+		else{
+		counter = counter+1
+
+		art.style.backgroundImage="url("+counter+".png)"
+		}
+	
+
+
+		}
+
+		setInterval(play, 3000)
+
+		
+
+	</script>
+
+
+
+</body>
+</html>
